@@ -3,5 +3,8 @@
 
 def frequencies(items):
     frequencies = {}
-    # Your code goes here
+    for item in items:
+        if not isinstance(item, str):
+            frequencies[item] = str(item)
+        frequencies[item] = items.count(item)
     return frequencies
