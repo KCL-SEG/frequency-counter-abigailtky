@@ -9,7 +9,4 @@ def frequencies(items):
             item = str(item)
         if item in frequencies:
             frequencies[item] += 1
-        else:
-            frequencies[item] = 1
-        #frequencies[item] = items.count(item)
     return frequencies
