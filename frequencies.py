@@ -7,5 +7,9 @@ def frequencies(items):
     for item in items:
         if not isinstance(item, str):
             item = str(item)
-        frequencies[item] = items.count(item)
+        if item in frequencies:
+            frequencies[item] += 1
+        else:
+            frequencies[item] = 1
+        #frequencies[item] = items.count(item)
     return frequencies
